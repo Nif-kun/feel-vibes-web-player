@@ -41,7 +41,7 @@ function setPlayerDesign(file) {
 ```
 
 ### Copy-Paste: 
-*Paste one by one.*
+*Do it one by one.*
 ```
 getProjectFile()
 setPlayerDesign(projectFile)
