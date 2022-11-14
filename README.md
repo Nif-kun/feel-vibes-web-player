@@ -1,45 +1,6 @@
 # FeelVibes - Player
 An `.fvd` file player made in [FeelVibes - Editor](https://nif-kun.github.io/feel-vibes-web-editor/). The [player](https://nif-kun.github.io/feel-vibes-web-player/) can be embedded to sites and interacted with the following functions below.
 
-### Script:
-```
-var projectFile;
-var dataBuffer = {};
-var playerDesign;
-var resetPlayerDesign;
-var startPlayerDesign;
-var stopPlayerDesign;
-
-function getProjectFile() {
-  window.input = document.createElement('input');
-  input.accept = ".fvd"
-  input.type = 'file'
-  input.click();
-
-  input.onchange = e => {
-    projectFile = e.target.files[0];
-  }
-}
-
-function setCallbacks(setDesignCallback, resetCallback, startCallback, stopCallback ) {
-  playerDesign = setDesignCallback;
-  resetPlayerDesign = resetCallback;
-  startPlayerDesign = startCallback;
-  stopPlayerDesign = stopCallback;
-}
-
-function setPlayerDesign(file) {
-  var reader = new FileReader();
-  reader.readAsArrayBuffer(file);
-  reader.onloadend = readerEvent => {
-    if (readerEvent.target.readyState == FileReader.DONE) {
-      dataBuffer.result = readerEvent.target.result;
-      playerDesign(file.name);
-    }
-  }
-}
-```
-
 ### Functions:
 Function          | Parameter   | Description
 ------------------|-------------|------------
