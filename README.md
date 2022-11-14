@@ -1,4 +1,8 @@
-# FeelVibes - Player
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Nif-kun/feel-vibes-web-player/main/index.144x144.png">
+</p>
+
+---
 An `.fvd` file player made in [FeelVibes - Editor](https://nif-kun.github.io/feel-vibes-web-editor/). The [player](https://nif-kun.github.io/feel-vibes-web-player/) can be embedded to sites and interacted with the following functions below.
 
 ### Functions:
